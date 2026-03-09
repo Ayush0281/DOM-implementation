@@ -26,7 +26,11 @@ function greetUser() {
 
     const greeting = document.getElementById("greeting");
 
-    greeting.innerText = "Hello, " + name;
+    if(name === ""){
+        greeting.innerText = "Hello";
+    }else{
+        greeting.innerText = "Hello, " + name + "!";
+    }
 
 }
 
